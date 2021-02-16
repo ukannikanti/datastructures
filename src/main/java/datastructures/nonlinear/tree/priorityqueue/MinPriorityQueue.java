@@ -1,4 +1,4 @@
-package datastructures.linear.priorityqueue;
+package datastructures.nonlinear.tree.priorityqueue;
 
 import datastructures.nonlinear.tree.MinIntHeapTree;
 

@@ -11,9 +11,11 @@ public class DijkstrasAlgorithm {
     MinVertexPriorityQueue minQueue = new MinVertexPriorityQueue(graph.vertices.size());
     Set<String> visited = new HashSet<>();
 
+    // Initial node
     totalCosts.put(startNode.name, 0);
     minQueue.push(startNode);
 
+    // Initialize costs for all nodes to Infinity.
     for (Graph.Vertex vertex : graph.vertices.keySet()) {
       if (!vertex.name.equals(startNode.name)) {
         totalCosts.put(vertex.name, Integer.MAX_VALUE);
